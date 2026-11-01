@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <!-- Original UnityHFSM sources, linked read-only; no UnityEngine-dependent modules. -->
+  <ItemGroup>
+    <Compile Include="../UnityHFSM/src/Base/*.cs" Link="UnityHFSM/Base/%(Filename)%(Extension)" />
+    <Compile Include="../UnityHFSM/src/Exceptions/*.cs" Link="UnityHFSM/Exceptions/%(Filename)%(Extension)" />
+    <Compile Include="../UnityHFSM/src/Inspection/*.cs" Link="UnityHFSM/Inspection/%(Filename)%(Extension)" />
+    <Compile Include="../UnityHFSM/src/States/ActionState.cs" Link="UnityHFSM/ActionState.cs" />
+    <Compile Include="../UnityHFSM/src/States/ActionStorage.cs" Link="UnityHFSM/ActionStorage.cs" />
+    <Compile Include="../UnityHFSM/src/StateMachine/StateMachine.cs" Link="UnityHFSM/StateMachine.cs" />
+    <Compile Include="../UnityHFSM/src/Transitions/Transition.cs" Link="UnityHFSM/Transition.cs" />
+    <Compile Include="../UnityHFSM/src/Transitions/ReverseTransition.cs" Link="UnityHFSM/ReverseTransition.cs" />
+    <Compile Include="../UnityHFSM/src/Transitions/TransitionDecorator.cs" Link="UnityHFSM/TransitionDecorator.cs" />
+    <Compile Include="../UnityHFSM/src/Transitions/DecoratedTransition.cs" Link="UnityHFSM/DecoratedTransition.cs" />
+  </ItemGroup>
+</Project>
